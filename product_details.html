@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Womazing</title>
+	<meta name="description" content="Womazing">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+	<!-- CSS here -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<!--? Preloader Start -->
+	<div id="preloader-active">
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="preloader-inner position-relative">
+				<div class="preloader-circle"></div>
+				<div class="preloader-img pere-text">
+					<img src="assets/img/Womazing.svg" alt="#">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Preloader Start -->
+	<!-- MODAL -->
+	<div id="wrapper-modal">
+		<div id="overlay"></div>
+		<div id="modal-window">
+			<div>
+				<button id="btn-close">x</button>
+			</div>
+			<div class="window-content">
+				<div class="booking-form">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="form-title text-center">
+									<h3>Заказать обратный звонок</h3>
+								</div> 
+								<form action="mail.php" class="form-book js-form" method="get" id="overlayForm">
+									<input type="text" class="form-book__input" placeholder="Name" name="Name">
+									<input type="text" class="form-book__input" placeholder="Email" name="Email">
+									<input type="text" class="form-book__input" placeholder="Phone" name="Phone">
+									<button class="btn select-btn submit" id="btn-send" data-submit>Заказать звонок</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="after-modal">
+		<div id="overlay"></div>
+		<div id="after-window">
+			<div class="container">
+				<div class="row ">
+					<div class="col-12 justify-content-center">
+						<div class="form-title text-center">
+							<h3>Отлично! Мы скоро вам перезвоним.</h3>
+						</div>
+						<button class="btn close-btn d-flex mx-auto">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header" style="background: none">
+		<div class="header-area header-transparent">
+			<div class="main-header header-sticky">
+				<div class="container">
+					<div class="row">
+						<!-- Mobile Menu -->
+						<div class="col-3 col-sm-4 mr-auto d-lg-none">
+							<nav class="menu-item head-menu"> 
+								<ul id="navigation">
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Магазин</a></li>
+									<li><a href="#">О бренде</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<button type="button" class="menu-close" id="closeMenu">x</button>
+							</nav>
+							<div class="mobile_menu d-flex d-lg-none">
+								<div class="hamburger">
+									<a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed ml-auto"><img src="assets/img/Menu_Icon.png" alt="#"></a>
+								</div>
+							</div>
+						</div>
+						<!-- Logo -->
+						<div class="col-6 col-sm-4 d-flex col-lg-3">
+							<div class="logo">
+								<a href="index.html"><img src="assets/img/logo.png" alt="#" class="slicknav_menu"></a>
+							</div>
+						</div>
+						<!-- Main-menu -->
+						<div class="col-5 d-none d-lg-block">
+							<div class="menu-main">
+								<nav> 
+									<ul class="menu-item d-flex" id="navigation">
+										<li><a href="index.html">Главная</a></li>
+										<li><a href="#">Магазин</a></li>
+										<li><a href="#">О бренде</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- Header Right -->
+						<div class="col-3 col-sm-4 header-right d-flex">
+							<ul class="d-flex ml-auto">
+								<li> <a href="#" class="header-img" data-parent="Кнопка в первом экране" data-toggle="modal" data-target="#myModal" id="btn-open"></a>
+								</li>
+								<li><a href="tel:+7 (495) 823-54-12" class="header-phone">+7 (495) 823-54-12</a>
+								</li>
+								<li><a href="cart.html" class="header-cart">
+									<img src="assets/img/card.svg" alt="#"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<!-- Hero Area Start-->
+     <div class="section-area ">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 d-flex">
+                  <div class="product-cap">
+                     <h1>Свитшот Sweet Shot</h1>
+                     <div class="hero-link d-flex" style="margin-bottom: 102px">
+	                     <a href="index.html">Главная <span>—</span></a>
+	                     <a href="shop.html">Свитшоты<span>—</span></a>
+	                     <a href="shop.html">Свитшот Sweet Shot</a>
+	                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+     </div>
+		<!-- Hero Area End-->
+		<section class="one-product">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-12">
+						<img src="assets/img/one_product.jpg" class="product-img" alt="#">
+					</div>
+					<div class="col-sm-6 col-12 product">
+						<div class="product-description">
+							<p class="product-price">$311 <span>$450</span></p>
+							<p class="product-text">Выберите размер</p>
+							<div class="product-btns">
+								<ul class="size-list d-flex">
+									<li class="size-item"><a href="#">S</a></li>
+									<li class="size-item"><a href="#">M</a></li>
+									<li class="size-item"><a href="#">L</a></li>
+									<li class="size-item"><a href="#">XL</a></li>
+									<li class="size-item"><a href="#">XL</a></li>
+								</ul>
+							</div>
+							<p class="product-text">Выберите цвет</p>
+							<div class="product-btns">
+								<ul class="color-list d-flex">
+									<li class="color-item" style="background: #927876;"><a href="#"></a></li>
+									<li class="color-item" style="background: #D4D4D4;"><a href="#"></a></li>
+									<li class="color-item" style="background: #FD9696;"><a href="#"></a></li>
+									<li class="color-item" style="background: #FDC796;"><a href="#"></a></li>
+								</ul>
+							</div>
+							<div class="product-add d-flex">
+								<a href="#" class="quantity">1</a>
+								<a href="#" class="add-cart btn">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="connection-product">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="connection-title">Связанные товары</h2>
+						<div class="row d-flex collection-wrapper">
+							<div class="col-6 col-sm-4 col-lg-4">
+								<div class="single-item text-center">
+									<div class="popular-img">
+										<img src="assets/img/new1.jpg" alt="#">
+										<div class="overlay"><a href="#"><img src="assets/img/arrow2.png" alt="#"></a></div>
+									</div>
+									<div class="popular-caption">
+										<h3><a href="#" class="popular-title">Футболка USA</a></h3>
+										<span class="old-price">$229</span>
+										<span class="popular-price">$129</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-lg-4">
+								<div class="single-item text-center">
+									<div class="popular-img">
+										<img src="assets/img/new2.jpg" alt="#">
+										<div class="overlay"><a href="#"><img src="assets/img/arrow2.png" alt="#"></a></div>
+									</div>
+									<div class="popular-caption">
+										<h3><a href="#" class="popular-title">Купальник Glow</a></h3>
+										<span class="popular-price">$129</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-block d-md-none">
+					<div class="footer-menu">
+						<nav>
+							<ul class="menu-item d-flex" id="navigation">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="shop.html">Магазин</a>
+									<ul class="submenu size">
+										<li><a href="#">Пальто</a></li>
+										<li><a href="#">Свитшоты</a></li>
+										<li><a href="#">Кардиганы</a></li>
+										<li><a href="#">Толстовки</a></li>
+									</ul>
+								</li>
+								<li><a href="#">О бренде</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 d-flex footer-logo">
+					<div class="logo" style="margin-left: 0 !important;">
+						<img src="assets/img/logo.png" alt="#">
+					</div>
+					<div class="reserved">
+						<p>© Все права защищены</p>
+						<a href="#"><p>Политика конфиденциальности</p></a>
+						<a href="#"><p>Публичная оферта</p></a>
+					</div>
+				</div>
+				<div class="col-6 d-none d-md-block">
+					<div class="footer-menu">
+						<nav>
+							<ul class="menu-item d-flex" id="navigation">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Магазин</a>
+									<ul class="submenu size">
+										<li><a href="#">Пальто</a></li>
+										<li><a href="#">Свитшоты</a></li>
+										<li><a href="#">Кардиганы</a></li>
+										<li><a href="#">Толстовки</a></li>
+									</ul>
+								</li>
+								<li><a href="#">О бренде</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 d-flex ">
+					<div class="footer-contact ml-auto">
+						<a href="tel:+7 (495) 823-54-12" class="contact-phone" align="right">+7 (495) 823-54-12</a>
+						<a href="mailto:hello@womazing.com" class="contact-mail" align="right">hello@womazing.com</a>
+						<div class="social" ml-auto>
+							<a href="#" class="insta"></a>
+							<a href="#" class="facebook"></a>
+							<a href="#" class="twiter"></a>
+						</div>
+						<div class="payment d-flex">
+							<a href="#" class="ml-auto"><img src="assets/img/visa-mastercard1.svg" alt="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/modernizr-3.5.0.min.js"></script>
+	<script src="assets/js/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
